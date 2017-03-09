@@ -1,0 +1,135 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	background-color:#e8e8e8;
+}
+
+input{
+	width:350px;
+}
+
+input[type=button]{
+	border:2px solid #9e9e9e;
+	border-radius:2px;
+}
+
+#headerDisplay{
+	weight:100%;
+	heigth:35px;
+}
+
+.headerDisplay{
+	font:22px sans-serif;
+	padding:5px;
+	color:#4e4e4e;
+	background-color:#ffffff;
+}
+
+#formCadastro{
+	margin-top:30px;
+	padding:3px;
+	width:100%;
+}
+
+.formCadastro{
+	background-color:#e2e2e2;
+}
+
+#camposCadastro{
+	size:120px;
+}
+
+
+input[type=text]:focus {
+    border: 2px solid #000000;
+}
+
+.camposCadastro{
+	font:12px sans-serif;
+	padding:4px;
+	color:#4e4e4e;
+}
+
+.btnCadastro{
+	width:80px;
+	font:12px sans-serif;
+	padding:4px;
+	color:#ffffff;
+	background-color:#95a8a5;
+}
+
+.btnCadastro:hover{
+	width:80px;
+	font:12px sans-serif;
+	padding:4px;
+	cursor:pointer;
+	color:#ffffff;
+	background-color:#95a8a5;
+	border:2px solid #178d18;
+}
+
+#retornoDisplay{
+	weight:100%;
+	heigth:15px;
+}
+
+.retornoDisplay{
+	font:15px sans-serif;
+	padding:5px;
+	color:#4e4e4e;
+	background-color:#ffffff;
+}
+
+#retornaClientes{
+	width:100%;
+	margin-top:3px;
+	border:1px solid;
+	border-color:#4e4e4e;
+}
+
+.retornaClientes{
+	font:14px sans-serif;
+	padding:4px;
+	color:#4e4e4e;
+	background-color:#ffffff;
+}
+
+.btnExcluir{
+	width:75px;
+	font:12px sans-serif;
+	padding:4px;
+	color:#ffffff;
+	background-color:#95a8a5;
+}
+
+.btnExcluir:hover{
+	width:75px;
+	font:12px sans-serif;
+	padding:4px;
+	cursor:pointer;
+	color:#ffffff;
+	background-color:#95a8a5;
+	border:2px solid #db5b4d;
+}
+
+.btnAlterar{
+	width:75px;
+	font:12px sans-serif;
+	padding:4px;
+	color:#ffffff;
+	background-color:#95a8a5;
+}
+
+.btnAlterar:hover{
+	width:75px;
+	font:12px sans-serif;
+	padding:4px;
+	cursor:pointer;
+	color:#ffffff;
+	background-color:#95a8a5;
+	border:2px solid #5277f8;
+}
+

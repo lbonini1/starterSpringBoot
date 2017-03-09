@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="appCliente">
+<head>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" type="text/css" href="./css/index.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+<script src="./js/app.js"></script>
+<title>API-WEB - SpringBoot-REST-AngularJS</title>
+</head>
+<body ng-controller="indexController">
+	<div id="headerDisplay" class="headerDisplay">
+		<label>Cadastro de Clientes</label>
+	</div>	
+	<div id="formCadastro" class="formCadastro">
+		<label class="camposCadastro">Nome</label><br/>
+		<input type="text" id="nomeCliente" class="camposCadastro" ng-model="objCliente.nome"/><br/>
+		<label class="camposCadastro">Idade</label><br/>
+		<input type="text" id="idadeCliente" class="camposCadastro" ng-model="objCliente.idade"/><br/>
+		<label class="camposCadastro">Cidade</label><br/>
+		<input type="text" id="cidadeCliente" class="camposCadastro" ng-model="objCliente.cidade"/>
+		<input type="button" id="cadastrarCliente" class="btnCadastro" value="Salvar" ng-click="cadastrarClientes()"/>
+		<input type="button" id="cancelarAlteracaoCliente" class="btnExcluir" value="Cancelar" ng-click="cancelarAlteracao()"/><br/>
+		<br/>
+	</div>
+	<div id="retornoDisplay" class="retornoDisplay">
+		Clientes Cadastrados<br/>
+	</div>
+	<div id="retornaClientes" class="retornaClientes" ng-repeat="it in clientes">	
+		<label>{{ it.id + '    |    ' + it.nome + '    |    ' + it.idade + ' ano(s) ' + '    |    ' + it.cidade  }}</label>
+		<input type="button" id="alterarCliente" class="btnAlterar" value=" Alterar " ng-click="alterarClientes(it)"/> 
+		<input type="button" id="excluirCliente" class="btnExcluir" value=" Remover " ng-click="excluirClientes(it)"/>
+	</div>		
+</body>
+</html>
